@@ -1,5 +1,6 @@
 body{
     background-color: #22272e;
+    min-width: 400px;
 }
 .navigation-bar{
     background-color:  #202020;
@@ -46,9 +47,9 @@ body{
     border: solid #202020;
     border-radius: 10px;
     border-width: 2px;
-    margin:3%;
     height: 90%;
-    width: 90%;
+    width: 85%;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
     font-family: Cascadia Mono;
@@ -73,47 +74,47 @@ body{
     text-indent: 1em;
 }
 
- /* Popup container */
- .popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* The actual popup (appears on top) */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -250%;
-    left: 50%;
-    margin-left: -120px;
-  }
-  
+/* Popup container */
+.popup {
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
 
-  
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  } 
+/* The actual popup (appears on top) */
+.popup .popuptext {
+visibility: hidden;
+width: 160px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 8px 0;
+position: absolute;
+z-index: 1;
+bottom: -250%;
+left: 50%;
+margin-left: -160px;
+}
+
+
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+visibility: visible;
+-webkit-animation: fadeIn 1s;
+animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:1 ;}
+} 
 
 
