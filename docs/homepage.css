@@ -1,6 +1,7 @@
 body{
     background-color: #22272e;
-    min-width: 400px;
+    min-width: 340px;
+    min-height: min-content;
 }
 .navigation-bar{
     background-color:  #202020;
@@ -32,7 +33,6 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-
 .input{
     background: transparent;
     border: none;
@@ -61,7 +61,7 @@ body{
     flex-direction: column;
     font-family: Cascadia Mono;
     color: rgba(245, 245, 245, 0.813);
-    font-size: 16px;
+    font-size: 14px;
 }
 .terminal-text{
     display: flex;
@@ -80,14 +80,12 @@ body{
 .terminal-command{
     text-indent: 1em;
 }
-
 /* Popup container */
 .popup {
 position: relative;
 display: inline-block;
 cursor: pointer;
 }
-
 /* The actual popup (appears on top) */
 .popup .popuptext {
 visibility: hidden;
@@ -103,22 +101,17 @@ bottom: -250%;
 left: 50%;
 margin-left: -160px;
 }
-
-
-
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
 visibility: visible;
 -webkit-animation: fadeIn 1s;
 animation: fadeIn 1s
 }
-
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
 from {opacity: 0;}
 to {opacity: 1;}
 }
-
 @keyframes fadeIn {
 from {opacity: 0;}
 to {opacity:1 ;}
