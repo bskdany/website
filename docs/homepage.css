@@ -12,6 +12,12 @@ body{
     border-radius: 10px 10px 0 0;
     display: flex;
 }
+.navigation-bar-title{
+    width: 100%;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 4px;    
+}
 #closeButton{
     align-self: center;
     height: 80%;
