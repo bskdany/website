@@ -3,45 +3,53 @@
 </head>
 <body>
     <div class="card" id="card">
-        <div class="terminal-gui">
-            <div class="terminal-base">guest@bskdany.com</div>
-            <div>:</div>
-            <div style="color:dodgerblue">~</div>
-            <div>$</div>
-            <div class="terminal-command">whoami</div>
+        <div class="navigation-bar">
+            <button id="closeButton" type="submit" onclick="onXClick()">X</button>
+            <div class="popup" onclick="onXClick()">
+                <span class="popuptext" id="myPopup">where are you going?</span>
+              </div> 
         </div>
-        <div class="terminal-answer">
-            bskdany
-        </div>
-        <div class="terminal-gui">
-            <div class="terminal-base">guest@bskdany.com</div>
-            <div>:</div>
-            <div style="color:dodgerblue">~</div>
-            <div>$</div>
-            <div class="terminal-command">how to contact me</div>
-        </div>
-        <div class="terminal-answer">
-            <a href="https://form.jotform.com/222426448454256" style="color:rgba(30, 143, 255, 0.765)" target="_blank" >Here you go</a>
-        </div>
-        <div class="terminal-gui">
-            <div class="terminal-base">guest@bskdany.com</div>
-            <div>:</div>
-            <div style="color:dodgerblue">~</div>
-            <div>$</div>
-            <div class="terminal-command">where can you find me</div>
-        </div>
-        <div class="terminal-answer">
-            <a href="https://github.com/bskdany" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Github</a>
-            <a href="https://www.instagram.com/bskdany/"style="color:rgba(30, 143, 255, 0.765)" target="_blank">Instagram</a>
-            <a href="https://twitter.com/bskdany" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Twitter</a>
-            <a href="https://www.reddit.com/user/bskdany/" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Reddit</a>
-        </div>
-        <div class="terminal-gui" id="empty-gui">
-            <div class="terminal-base">guest@bskdany.com</div>
-            <div>:</div>
-            <div style="color:dodgerblue">~</div>
-            <div>$</div>
-            <input class="input" id="input" autofocus  onkeypress="clickPress(event)">
+        <div class="terminal-gui" id="terminal-gui">
+            <div class="terminal-text">
+                <div class="terminal-base">guest@bskdany.com</div>
+                <div>:</div>
+                <div style="color:dodgerblue">~</div>
+                <div>$</div>
+                <div class="terminal-command">whoami</div>
+            </div>
+            <div class="terminal-answer">
+                bskdany
+            </div>
+            <div class="terminal-text">
+                <div class="terminal-base">guest@bskdany.com</div>
+                <div>:</div>
+                <div style="color:dodgerblue">~</div>
+                <div>$</div>
+                <div class="terminal-command">contact me</div>
+            </div>
+            <div class="terminal-answer">
+                <a href="https://form.jotform.com/222426448454256" style="color:rgba(30, 143, 255, 0.765)" target="_blank" >here</a>
+            </div>
+            <div class="terminal-text">
+                <div class="terminal-base">guest@bskdany.com</div>
+                <div>:</div>
+                <div style="color:dodgerblue">~</div>
+                <div>$</div>
+                <div class="terminal-command">social media</div>
+            </div>
+            <div class="terminal-answer">
+                <a href="https://github.com/bskdany" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Github</a>
+                <a href="https://www.instagram.com/bskdany/"style="color:rgba(30, 143, 255, 0.765)" target="_blank">Instagram</a>
+                <a href="https://twitter.com/bskdany" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Twitter</a>
+                <a href="https://www.reddit.com/user/bskdany/" style="color:rgba(30, 143, 255, 0.765)" target="_blank">Reddit</a>
+            </div>
+            <div class="terminal-text" id="empty-gui">
+                <div class="terminal-base">guest@bskdany.com</div>
+                <div>:</div>
+                <div style="color:dodgerblue">~</div>
+                <div>$</div>
+                <input class="input" id="input" autofocus  onkeypress="clickPress(event)">
+            </div>
         </div>
     </div>
 </body>
