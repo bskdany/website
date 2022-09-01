@@ -43,13 +43,20 @@ body{
     font-size: 16px;
 }
 .card{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    margin: auto auto;
+
     background-color: #242424;
     border: solid #202020;
     border-radius: 10px;
     border-width: 2px;
     height: 90%;
     width: 85%;
-    margin: auto auto;
     display: flex;
     flex-direction: column;
     font-family: Cascadia Mono;
